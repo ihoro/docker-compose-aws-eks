@@ -7,3 +7,5 @@ RUN apk add --no-cache python py-pip \
  && wget https://amazon-eks.s3-us-west-2.amazonaws.com/1.12.7/2019-03-27/bin/linux/amd64/aws-iam-authenticator -O /usr/local/bin/aws-iam-authenticator \
  && chmod +x /usr/local/bin/aws-iam-authenticator
 
+ENTRYPOINT []
+
