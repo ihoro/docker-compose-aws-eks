@@ -1,9 +1,6 @@
-FROM docker/compose:1.25.0-rc2-alpine AS compose
+FROM docker:20.10.21-alpine3.16 AS runtime
 
-FROM docker:19.03.1 AS runtime
-
-COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
-RUN apk add --no-cache bash python py-pip \
+RUN apk add --no-cache bash python3 py-pip \
   && pip install awscli \
   && wget https://storage.googleapis.com/kubernetes-release/release/v1.14.1/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
   && chmod +x /usr/local/bin/kubectl \
