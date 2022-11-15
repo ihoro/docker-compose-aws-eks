@@ -6,14 +6,14 @@ Your CI builds can be based on this image if you need to do some docker-compose 
 Alpine linux with the following (based on docker:20.10.21-alpine3.16 image):
 - docker 20.10.21
 - docker-compose 1.12.2
-- aws-cli 1.27.9
 - bash 5.1.16
 - python 3.10.8
 - pip 22.1.1
 
 Legacy versions of aws/kubectl (to ease migration from 19.03.1-1.25.0-rc2):
-- kubectl 1.14.1
+- aws-cli 1.27.9
 - aws-iam-authenticator 1.12.7/2019-03-27
+- kubectl 1.14.1
 
 ## docker-compose-aws-eks:19.03.1-1.25.0-rc2
 Alpine linux with the following (based on docker:19.03.1 image):
