@@ -9,7 +9,7 @@ Tags:
 ## 20.10.21-2.12.2
 Alpine linux with the following (based on docker:20.10.21-alpine3.16 image):
 - docker 20.10.21
-- docker-compose 1.12.2
+- docker-compose 2.12.2
 - bash 5.1.16
 - python 3.10.8
 - pip 22.1.1
@@ -20,13 +20,13 @@ Alpine linux with the following (based on docker:20.10.21-alpine3.16 image):
 ## 20.10.21-2.12.2-legacy
 Alpine linux with the following (based on docker:20.10.21-alpine3.16 image):
 - docker 20.10.21
-- docker-compose 1.12.2
+- docker-compose 2.12.2
 - bash 5.1.16
 - python 3.10.8
 - pip 22.1.1
 - aws-cli 1.27.9
 
-Legacy versions of aws/kubectl (to ease migration from 19.03.1-1.25.0-rc2):
+Legacy versions of awseks/kubectl (to ease migration from 19.03.1-1.25.0-rc2):
 - aws-iam-authenticator 1.12.7/2019-03-27
 - kubectl 1.14.1
 
